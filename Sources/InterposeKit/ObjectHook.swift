@@ -13,7 +13,7 @@ extension Interpose {
         var interposeSubclass: InterposeSubclass?
 
         // Logic switch to use super builder
-        let generatesSuperIMP = InterposeSubclass.supportsSuperTrampolines
+        let generatesSuperIMP = false
 
         /// Initialize a new hook to interpose an instance method.
         public init(object: AnyObject, selector: Selector,
